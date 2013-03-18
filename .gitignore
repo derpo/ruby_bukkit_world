@@ -1,3 +1,5 @@
 .idea/
+banned*txt
 world*
 server.log*
+server.properties
