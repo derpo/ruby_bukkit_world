@@ -10,10 +10,8 @@ import 'org.bukkit.event.player.PlayerMoveEvent'
 
 class RainingSand < RubyPlugin
   def onEnable
-    getServer.getOnlinePlayers.each do |player|
-      registerEvent(PlayerMoveEvent, :Normal) do |event|
-        rainOneSand(event.player)
-      end
+    registerEvent(PlayerMoveEvent, :Normal) do |event|
+     # rainOneSand(event.player)
     end
   end
 
